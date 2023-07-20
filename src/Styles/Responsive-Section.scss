@@ -1,0 +1,132 @@
+@import "Mixins";
+.Contact-Me {
+  background-color: red;
+  height: auto;
+  width: 100vw;
+
+  &--Section-A {
+    background-color: orange;
+    @include respond(Desktop-Big) {
+      height: 80vh;
+      width: 96vw;
+    }
+    @include respond(Tablet-Portrait) {
+      height: auto;
+      width: 96vw;
+    }
+    .Block-For-Image {
+      background-color: yellow;
+      @include respond(Desktop-Big) {
+        height: 80vh;
+        width: 46vw;
+      }
+      @include respond(Tablet-Portrait) {
+        height: 50vh;
+        width: 92vw;
+      }
+      .Actual-Image {
+        background-color: green;
+        @include respond(Desktop-Big) {
+          height: 50vh;
+          width: 35vw;
+        }
+        @include respond(Tablet-Landscape) {
+          height: 40vh;
+        }
+        @include respond(Tablet-Portrait) {
+          height: 40vh;
+          width: 72vw;
+        }
+      }
+    }
+    .Block-For-Text {
+      background-color: yellow;
+      @include respond(Desktop-Big) {
+        height: 80vh;
+        width: 46vw;
+      }
+      @include respond(Tablet-Portrait) {
+        height: 50vh;
+        width: 92vw;
+      }
+      .Actual-Text {
+        background-color: green;
+        @include respond(Desktop-Big) {
+          height: 60vh;
+          width: 42vw;
+        }
+        @include respond(Tablet-Landscape) {
+          height: 50vh;
+        }
+        @include respond(Tablet-Portrait) {
+          height: 45vh;
+          width: 72vw;
+        }
+        .Heading-Text {
+          background-color: blue;
+          @include respond(Desktop-Big) {
+            height: 8vh;
+            width: 38vw;
+          }
+          @include respond(Tablet-Landscape) {
+            height: 7vh;
+          }
+
+          @include respond(Tablet-Portrait) {
+            height: 6vh;
+            width: 68vw;
+          }
+        }
+        .Paragraph-Text {
+          background-color: indigo;
+          @include respond(Desktop-Big) {
+            height: 24vh;
+            width: 38vw;
+          }
+          @include respond(Tablet-Landscape) {
+            height: 21vh;
+          }
+          @include respond(Tablet-Portrait) {
+            height: 18vh;
+            width: 68vw;
+          }
+        }
+        .Link-Text {
+          background-color: violet;
+          @include respond(Desktop-Big) {
+            height: 16vh;
+            width: 38vw;
+          }
+          @include respond(Tablet-Landscape) {
+            height: 14vh;
+          }
+          @include respond(Tablet-Portrait) {
+            height: 12vh;
+            width: 68vw;
+          }
+        }
+      }
+    }
+  }
+}
+// <div className="Contact-Me u-Column">
+// <div className="Contact-Me--Section-A u-Row">
+
+//   <div className="Block-For-Image u-Row">
+//     <div className="Actual-Image"></div>
+//   </div>
+
+//   <div className="Block-For-Text u-Row">
+//     <div className="Actual-Text u-Row">
+//       <div className="Heading-Text u-Row style={{ textAlign: "center" }}"></div>
+//       <div className="Paragraph-Text" style={{
+//     paddingLeft: "1vh",
+//     paddingTop: "1vh",
+//     textAlign: "left",
+//   }}></div>
+//       <div className="Link-Text u-Row"></div>
+//     </div>
+//   </div>
+
+// </div>
+// </div>

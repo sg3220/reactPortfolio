@@ -1,0 +1,21 @@
+@import "Theme";
+@import "Mixins";
+.Header {
+  background-color: var(--color-background-header-footer);
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  @include respond(Desktop-Big) {
+    height: 10rem;
+  }
+  @include respond(Tablet-Portrait) {
+    flex-direction: column;
+    height: 37.5rem;
+  }
+  @include respond(Smartphone) {
+    flex-direction: column;
+    height: 30rem;
+  }
+}

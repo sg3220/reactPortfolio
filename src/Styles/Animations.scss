@@ -1,0 +1,51 @@
+@import "Theme";
+@keyframes infiniteUpDown {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+@keyframes scrollInLeft {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes scrollInRight {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes borderShow {
+  0% {
+    border-image-source: linear-gradient(to bottom, transparent, transparent);
+  }
+  50% {
+    border-image-source: linear-gradient(
+      to bottom,
+      var(--color-text-primary),
+      transparent
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      to bottom,
+      var(--color-text-primary),
+      var(--color-text-primary)
+    );
+  }
+}

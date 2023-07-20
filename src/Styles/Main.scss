@@ -1,0 +1,402 @@
+@import "Animations";
+@import "Mixins";
+@import "Theme";
+
+.Main {
+  @include respond(Desktop-Big) {
+    height: 164rem;
+  }
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &--Section {
+    @include respond(Desktop-Big) {
+      width: 100%;
+    }
+    @include respond(Tablet-Portrait) {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &--Section-01 {
+    @include respond(Desktop-Big) {
+      height: 56rem;
+      background-color: transparent;
+    }
+  }
+  &--Section-02 {
+    @include respond(Desktop-Big) {
+      height: 50rem;
+      background-color: transparent;
+    }
+  }
+  &--Section-03 {
+    @include respond(Desktop-Big) {
+      height: 50rem;
+      background-color: transparent;
+    }
+  }
+}
+.text-Section-01 {
+  height: 12.5rem;
+  width: auto;
+  background-color: transparent;
+  color: var(--color-text-primary);
+}
+.Heading {
+  font-size: 3rem;
+  font-weight: 700;
+
+  letter-spacing: 0.25rem;
+
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+.custom-Dialog-Box {
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: auto;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.image-Section {
+  @include respond(Desktop-Big) {
+    height: 30rem;
+    width: 40rem;
+  }
+  @include respond(Tablet-Landscape) {
+    height: 22.5rem;
+    width: 30rem;
+  }
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  box-shadow: 0 0 0.25rem 0.25rem white;
+  // mix-blend-mode: hard-light;
+
+  position: relative;
+
+  animation-name: infiniteUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+.image-Section-01 {
+  background-color: white;
+  background-image: url("./../Assets/image03.gif");
+  height: 15rem;
+  &::after {
+    content: "Full Stack Web developer";
+  }
+}
+.image-Section-02 {
+  background-image: url("./../Assets/image04.gif");
+  &::after {
+    content: "Full Stack Web developer";
+  }
+}
+.image-Section-03 {
+  background-image: url("./../Assets/image01.gif");
+  &::after {
+    content: "Full Stack Web developer";
+  }
+}
+.Icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: relative;
+  padding: 2rem;
+  margin: 1rem;
+}
+.Icon-HTML {
+  background-image: url("./../Assets/HTML.png");
+
+  &::after {
+    content: "HTML";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-CSS {
+  background-image: url("./../Assets/CSS.png");
+
+  &::after {
+    content: "CSS";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-JavaScript {
+  background-image: url("./../Assets/JavaScript.png");
+
+  &::after {
+    content: "JS";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-SASS {
+  background-image: url("./../Assets/SASS.png");
+
+  &::after {
+    content: "SASS";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-MongoDB {
+  background-image: url("./../Assets/MongoDB.png");
+
+  &::after {
+    content: "MongoDB";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-Express {
+  background-image: url("./../Assets/Express.png");
+
+  &::after {
+    content: "Express";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-React {
+  background-image: url("./../Assets/React.png");
+
+  &::after {
+    content: "React";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-Node {
+  background-image: url("./../Assets/Node.png");
+
+  &::after {
+    content: "Node";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-Git {
+  background-image: url("./../Assets/Git.png");
+
+  &::after {
+    content: "Git";
+    position: absolute;
+    top: -50%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Icon-GitHub {
+  background-image: url("./../Assets/GitHub.png");
+
+  &::after {
+    content: "GitHub";
+    position: absolute;
+    top: -60%;
+    left: 0%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    border-radius: 0.2rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}

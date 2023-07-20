@@ -1,0 +1,17 @@
+@import "Theme";
+@import "Mixins";
+
+.Footer {
+  @include respond(Desktop-Big) {
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+
+  background-color: var(--color-background-header-footer);
+  color: var(--color-text-primary);
+
+  align-items: center;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+}

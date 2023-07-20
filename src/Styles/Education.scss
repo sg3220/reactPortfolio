@@ -1,0 +1,481 @@
+@import "Mixins";
+@import "Theme";
+.Left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  background-color: transparent;
+  border-right: 10px solid;
+
+  border-image-slice: 1;
+  animation-name: borderShow;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+  @include respond(Desktop-Big) {
+    height: 70rem;
+    width: calc(50% - 5px);
+  }
+  .FakeDivUp {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    opacity: 0;
+    animation-name: scrollInLeft;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+    background-color: transparent;
+    border-bottom: 0.5rem solid;
+    border-image-slice: 1;
+    // border-width: 5px;
+    border-image-source: linear-gradient(
+      to left,
+      var(--color-text-primary),
+      transparent
+    );
+
+    // border-right: 10px solid var(--color-text-primary);
+    @include respond(Desktop-Big) {
+      height: 10rem;
+      width: 25%;
+      font-size: 5rem;
+    }
+    @include respond(Tablet-Landscape) {
+      height: 10rem;
+      width: 35%;
+      font-size: 5rem;
+    }
+    @include respond(Tablet-Portrait) {
+      height: 10rem;
+      width: 45%;
+    }
+    @include respond(Smartphone) {
+      height: 10rem;
+      width: 55%;
+    }
+  }
+  .FakeDivBelow {
+    background-color: transparent;
+    // background-image: url(./../Assets/cathedralSchool.avif);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+
+    // border-right: 10px solid var(--color-text-primary);
+    @include respond(Desktop-Big) {
+      height: 12.5rem;
+      width: 80%;
+      font-size: 5rem;
+    }
+    @include respond(Tablet-Landscape) {
+      height: 10rem;
+      width: 100%;
+      font-size: 10rem;
+    }
+    @include respond(Smartphone) {
+      margin-top: 4rem;
+    }
+  }
+}
+.Right {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  overflow: hidden;
+
+  @include respond(Desktop-Big) {
+    height: 70rem;
+    width: calc(50% - 5px);
+  }
+
+  .FakeDivUp {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    opacity: 0;
+    animation-name: scrollInRight;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+    background-color: transparent;
+    border-bottom: 0.5rem solid;
+    border-image-slice: 1;
+    // border-width: 5px;
+    border-image-source: linear-gradient(
+      to right,
+      var(--color-text-primary),
+      transparent
+    );
+
+    // border-right: 10px solid var(--color-text-primary);
+    @include respond(Desktop-Big) {
+      height: 10rem;
+      width: 25%;
+      font-size: 5rem;
+    }
+    @include respond(Tablet-Landscape) {
+      height: 10rem;
+      width: 35%;
+      font-size: 5rem;
+    }
+    @include respond(Tablet-Portrait) {
+      height: 10rem;
+      width: 45%;
+    }
+    @include respond(Smartphone) {
+      height: 10rem;
+      width: 55%;
+    }
+  }
+  .FakeDivBelow {
+    background-color: transparent;
+    // background-image: url(./../Assets/cathedralSchool.avif);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+
+    // border-right: 10px solid var(--color-text-primary);
+    @include respond(Desktop-Big) {
+      height: 12.5rem;
+      width: 65%;
+      font-size: 5rem;
+    }
+    @include respond(Tablet-Landscape) {
+      height: 10rem;
+      width: 100%;
+      font-size: 10rem;
+    }
+    @include respond(Smartphone) {
+      margin-top: 2rem;
+    }
+  }
+}
+.FakeDiv {
+  background-color: transparent;
+  @include respond(Desktop-Big) {
+    height: 20rem;
+    width: 25%;
+    font-size: 5rem;
+  }
+  @include respond(Tablet-Landscape) {
+    height: 20rem;
+    width: 25%;
+  }
+}
+.FakeDiv02 {
+  background-color: transparent;
+  border-right: 10px solid transparent;
+
+  border-image-slice: 1;
+  animation-name: borderShow;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+  @include respond(Desktop-Big) {
+    height: 75rem;
+    width: calc(20% - 5px);
+  }
+  @include respond(Tablet-Portrait) {
+    height: 125rem;
+    width: calc(20% - 5px);
+  }
+}
+.showItems {
+  background-color: transparent;
+  @include respond(Desktop-Big) {
+    height: 75rem;
+    width: calc(80% - 5px);
+  }
+  @include respond(Tablet-Portrait) {
+    height: 125rem;
+    width: calc(80% - 5px);
+  }
+}
+.Item {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+
+  animation-name: infiniteUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+  &:hover {
+    box-shadow: 0 0 10px 10px var(--color-text-tertiary);
+  }
+  @include respond(Desktop-Big) {
+    height: 20rem;
+    width: 30rem;
+  }
+  @include respond(Tablet-Landscape) {
+    height: 16rem;
+    width: 24rem;
+  }
+  @include respond(Tablet-Portrait) {
+    height: 15rem;
+    width: 22.5rem;
+  }
+}
+.Item-NP {
+  background-image: url("./../Assets/certificate01.jpg");
+  &::after {
+    content: attr(data-url);
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-ND {
+  background-image: url("./../Assets/certificate02.jpg");
+  animation-delay: 0.2s;
+
+  &::after {
+    content: "NPTEL: Design & Analysis Of Algorithms";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-ADA {
+  background-image: url("./../Assets/certificate03.png");
+
+  &::after {
+    content: "AWS: Data Analytics";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-ACF {
+  background-image: url("./../Assets/certificate04.png");
+  animation-delay: 0.2s;
+
+  &::after {
+    content: "AWS: Cloud Foundations";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-C {
+  background-image: url("./../Assets/certificate05.png");
+
+  &::after {
+    content: "Coursera: Programming With Javascript";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-U {
+  background-image: url("./../Assets/certificate06.jpg");
+
+  animation-delay: 0.2s;
+
+  &::after {
+    content: "Full Stack Development";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-Internship {
+  background-image: url("./../Assets/internship01.png");
+
+  @include respond(Smartphone) {
+    height: 10rem;
+    width: 55%;
+  }
+
+  &::after {
+    content: "May 2023 - July 2023";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    width: auto;
+
+    background-color: var(--color-text-primary);
+    color: var(--color-background-primary);
+
+    @include respond(Desktop-Big) {
+      padding: 0.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.25rem;
+    }
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.Item-Internship-02 {
+  background-image: url("./../Assets/internship02.png");
+}
+a {
+  font-size: 2rem;
+}
+.left-karna-hai {
+  text-align: left;
+}
+.pahla {
+  height: 57.5rem;
+  width: 42.5rem;
+  @include respond(Tablet-Portrait) {
+    height: 60rem;
+  }
+  @include respond(Smartphone) {
+    width: 25rem;
+    height: 30rem;
+  }
+}
+.dusra {
+  height: 37.5rem;
+  width: 50rem;
+  background-size: "contain";
+  @include respond(Tablet-Landscape) {
+    height: 30rem;
+    width: 40rem;
+  }
+  @include respond(Tablet-Landscape) {
+    height: 20rem;
+    width: 30rem;
+  }
+}

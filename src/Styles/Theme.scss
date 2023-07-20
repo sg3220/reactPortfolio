@@ -1,0 +1,45 @@
+:root {
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: #d63d5b;
+  --color-text-tertiary: #8d8d8d;
+  --color-text-hover: #f0f0f0;
+  --color-link-active: #f0f0f0;
+  --color-red: #e94235;
+  --color-yellow: #fabb05;
+  --color-green: #34a853;
+  --color-blue: #4285f4;
+  --color-background-primary: #1d1d1d;
+  --color-background-header-footer: #282828;
+  --color-modeChanger: #fff8dd;
+  --color-Linkedin: #2797cf;
+  --color-GitHub: #282828;
+  --color-Twitter: #1da1f2;
+  --color-Instagram: #c3278f;
+  --color-Email: #56bcf4;
+}
+
+.light-mode {
+  --color-text-primary: #000000;
+  --color-text-secondary: #d63d5b;
+  --color-text-tertiary: #8d8d8d;
+  --color-text-hover: #f0f0f0;
+  --color-link-active: #000000;
+  --color-red: #e94235;
+  --color-yellow: #fabb05;
+  --color-green: #34a853;
+  --color-blue: #4285f4;
+  --color-background-primary: #f7f7f7;
+  --color-background-header-footer: #dedede;
+  --color-modeChanger: #fff77d;
+  --color-Linkedin: #2797cf;
+  --color-GitHub: #282828;
+  --color-Twitter: #1da1f2;
+  --color-Instagram: #c3278f;
+  --color-Email: #56bcf4;
+}
+
+.dark-mode {
+  // Dark mode styles
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+}

@@ -1,0 +1,105 @@
+@import "Mixins";
+.Projects-Internship {
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  &--Section-00 {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  &--Section-02 {
+    background-color: transparent;
+    @include respond(Desktop-Big) {
+      height: auto;
+      width: 100%;
+    }
+    .projects-Container {
+      background-color: transparent;
+      @include respond(Desktop-Big) {
+        height: 50rem;
+        width: 100%;
+      }
+      @include respond(Tablet-Portrait) {
+        flex-direction: column;
+      }
+    }
+    .project-Div {
+      background-color: transparent;
+      &:hover {
+        box-shadow: 0 0 10px 10px var(--color-text-tertiary);
+      }
+      @include respond(Desktop-Big) {
+        height: 25rem;
+        width: 40%;
+        border-radius: 1rem;
+        padding-left: 1rem;
+      }
+      @include respond(Tablet-Landscape) {
+        height: 35%;
+      }
+      @include respond(Tablet-Portrait) {
+        height: 35%;
+        width: 60%;
+      }
+      @include respond(Smartphone) {
+        height: 35%;
+        width: 80%;
+      }
+    }
+    .project-Heading {
+      text-align: "left";
+      @include respond(Desktop-Big) {
+        height: 4rem;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+      @include respond(Tablet-Landscape) {
+        height: 1rem;
+        font-size: 1rem;
+      }
+    }
+    .project-Description {
+      text-align: left;
+      @include respond(Tablet-Landscape) {
+        padding-top: 5rem;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+      @include respond(Tablet-Portrait) {
+        padding-top: 5rem;
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+    .iconSize {
+      animation-name: infiniteUpDown;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      @include respond(Desktop-Big) {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+  }
+  &--Section-03 {
+    background-color: transparent;
+    @include respond(Desktop-Big) {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+.project-Image {
+  background-color: transparent;
+  background-image: url("./../Assets/image06.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+}
+.ekAurClass {
+  height: "39vh";
+  width: "30vw";
+  background-color: "transparent";
+}

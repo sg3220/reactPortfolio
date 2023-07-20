@@ -1,0 +1,175 @@
+@import "Mixins";
+@import "Theme";
+.Contact-Me {
+  background-color: transparent;
+  height: auto;
+  width: 100vw;
+
+  &--Section {
+    background-color: transparent;
+    @include respond(Desktop-Big) {
+      height: 80vh;
+      width: 96vw;
+    }
+    @include respond(Tablet-Portrait) {
+      height: auto;
+      width: 96vw;
+    }
+    .Block-For-Image {
+      background-color: transparent;
+      @include respond(Desktop-Big) {
+        height: 80vh;
+        width: 46vw;
+      }
+      @include respond(Tablet-Portrait) {
+        height: 50vh;
+        width: 92vw;
+      }
+      .Actual-Image {
+        background-color: transparent;
+        @include respond(Desktop-Big) {
+          height: 50vh;
+          width: 35vw;
+        }
+        @include respond(Tablet-Landscape) {
+          height: 40vh;
+        }
+        @include respond(Tablet-Portrait) {
+          height: 40vh;
+          width: 72vw;
+        }
+      }
+    }
+    .Block-For-Text {
+      background-color: transparent;
+      @include respond(Desktop-Big) {
+        height: 80vh;
+        width: 46vw;
+      }
+      @include respond(Tablet-Portrait) {
+        height: 50vh;
+        width: 92vw;
+      }
+      .Actual-Text {
+        background-color: transparent;
+        @include respond(Desktop-Big) {
+          height: 60vh;
+          width: 42vw;
+        }
+        @include respond(Tablet-Landscape) {
+          height: 50vh;
+        }
+        @include respond(Tablet-Portrait) {
+          height: 45vh;
+          width: 72vw;
+        }
+        .Heading-Text {
+          background-color: transparent;
+          font-weight: 700;
+          color: var(--color-text-primary);
+          @include respond(Desktop-Big) {
+            height: 8vh;
+            width: 38vw;
+            font-size: 5vh;
+          }
+          @include respond(Tablet-Landscape) {
+            height: 7vh;
+          }
+
+          @include respond(Tablet-Portrait) {
+            height: 6vh;
+            width: 68vw;
+          }
+        }
+        .Paragraph-Text {
+          background-color: transparent;
+          color: var(--color-text-tertiary);
+          @include respond(Desktop-Big) {
+            height: 24vh;
+            width: 38vw;
+            font-size: 3vh;
+          }
+          @include respond(Tablet-Landscape) {
+            height: 21vh;
+            font-size: 2.5vh;
+          }
+          @include respond(Tablet-Portrait) {
+            height: 18vh;
+            width: 68vw;
+          }
+        }
+        .Link-Text {
+          background-color: transparent;
+          @include respond(Desktop-Big) {
+            height: 16vh;
+            width: 38vw;
+          }
+          @include respond(Tablet-Landscape) {
+            height: 14vh;
+          }
+          @include respond(Tablet-Portrait) {
+            height: 12vh;
+            width: 68vw;
+          }
+          .Profile {
+            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include respond(Desktop-Big) {
+              height: 7.5vh;
+              width: 7.5vh;
+              border-radius: 7.5vh;
+            }
+            @include respond(Tablet-Landscape) {
+              height: 6vh;
+              width: 6vh;
+              border-radius: 6vh;
+            }
+            &:hover {
+              box-shadow: 0 0 5px 2px var(--color-text-primary);
+            }
+          }
+          .LinkedIn-Profile {
+            background-image: url("./../Assets/Linkedin.png");
+            background-color: var(--color-Linkedin);
+          }
+          .GitHub-Profile {
+            background-image: url("./../Assets/GitHub.png");
+            background-color: var(--color-GitHub);
+          }
+          .Twitter-Profile {
+            background-image: url("./../Assets/Twitter.png");
+            background-color: var(--color-Twitter);
+          }
+          .Instagram-Profile {
+            background-image: url("./../Assets/Instagram.png");
+            background-color: var(--color-Instagram);
+          }
+          .Email-Profile {
+            background-image: url("./../Assets/Email.png");
+            background-color: var(--color-Email);
+          }
+        }
+      }
+    }
+  }
+
+  &--Section-B {
+    // background-color: rgba(255, 0, 0, 0.6);
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+  }
+  &--Section-C {
+    // background-color: rgba(255, 0, 0, 0.4);
+    background-color: transparent;
+    height: 92vh;
+    width: 100vw;
+  }
+}
+.Actual-Image-Contact-01 {
+  background-image: url("./../Assets/image05.gif");
+}
+.Actual-Image-Contact-02 {
+  background-image: url("./../Assets/image07.gif");
+}

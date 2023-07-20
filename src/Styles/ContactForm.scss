@@ -1,0 +1,75 @@
+@import "Mixins";
+@import "Theme";
+.Ajooba {
+  background-color: var(--color-text-tertiary);
+  color: var(--color-text-tertiary);
+  @include respond(Desktop-Big) {
+    height: 40vh;
+    width: 38vw;
+    font-size: 3vh;
+  }
+  @include respond(Tablet-Landscape) {
+    height: 30vh;
+    font-size: 2.5vh;
+  }
+  @include respond(Tablet-Portrait) {
+    height: 30vh;
+    width: 68vw;
+  }
+  .Ajooba-Box {
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    color: var(--color-text-primary);
+    @include respond(Desktop-Big) {
+      height: 5vh;
+      width: 34vw;
+      font-size: 2.5vh;
+      font-weight: 700;
+    }
+    @include respond(Tablet-Landscape) {
+      height: 3.5vh;
+      width: 34vw;
+      font-size: 2vh;
+      font-weight: 700;
+    }
+    @include respond(Tablet-Portrait) {
+      height: 3.5vh;
+      width: 60vw;
+      font-size: 2vh;
+      font-weight: 700;
+    }
+  }
+  .Ajooba-Input {
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+    font-family: inherit;
+    font-size: 2vh;
+    border: none;
+    height: 3vh;
+    width: 20vw;
+    margin-right: 10px;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid var(--color-text-primary);
+    }
+  }
+  .Ajooba-Button {
+    font-family: inherit;
+    background-color: transparent;
+    border: 2px solid var(--color-text-primary);
+    border-radius: 2vh;
+    @include respond(Desktop-Big) {
+      height: 3vh;
+      width: 6vw;
+    }
+    @include respond(Tablet-Portrait) {
+      height: 3vh;
+      width: 10vw;
+    }
+  }
+}
+::placeholder {
+  color: var(--color-text-primary);
+}

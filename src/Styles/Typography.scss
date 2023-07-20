@@ -1,0 +1,43 @@
+@import "Theme";
+@import "Mixins";
+
+.primary-Heading {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  @include respond(Desktop-Big) {
+    height: 7.5rem;
+    width: auto;
+    font-size: 5rem;
+  }
+  @include respond(Smartphone) {
+    height: 7.5rem;
+    width: auto;
+    font-size: 4rem;
+  }
+}
+.secondary-Heading {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  @include respond(Desktop-Big) {
+    height: 5rem;
+    width: auto;
+    font-size: 2.5rem;
+  }
+  margin: 2rem;
+}
+.tertiary-Heading {
+  @include respond(Desktop-Big) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  @include respond(Tablet-Landscape) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+.highlight-Heading {
+  color: var(--color-text-secondary);
+  font-weight: bold;
+}
