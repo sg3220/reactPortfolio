@@ -82,13 +82,26 @@
       width: 80%;
       font-size: 5rem;
     }
-    @include respond(Tablet-Landscape) {
-      height: 10rem;
+    @include respond(Desktop-Medium) {
+      height: 12.5rem;
+      width: 75%;
+      font-size: 10rem;
+    }
+    @include respond(Desktop-Small) {
+      height: 17.5rem;
+      width: 75%;
+      font-size: 10rem;
+    }
+    @include respond(Tablet) {
+      height: 17.5rem;
       width: 100%;
       font-size: 10rem;
     }
-    @include respond(Smartphone) {
-      margin-top: 4rem;
+    @include respond(smartphone) {
+      height: 27.5rem;
+      width: 100%;
+      font-size: 5rem;
+      background-color: transparent;
     }
   }
 }
@@ -167,20 +180,27 @@
       width: 65%;
       font-size: 5rem;
     }
-    @include respond(Tablet-Landscape) {
-      height: 10rem;
-      width: 100%;
+    @include respond(Desktop-Medium) {
+      height: 12.5rem;
+      width: 75%;
       font-size: 10rem;
     }
-    @include respond(Smartphone) {
-      margin-top: 2rem;
+    @include respond(Desktop-Small) {
+      height: 17.5rem;
+      width: 75%;
+      font-size: 10rem;
+    }
+    @include respond(Tablet) {
+      height: 17.5rem;
+      width: 100%;
+      font-size: 10rem;
     }
   }
 }
 .FakeDiv {
   background-color: transparent;
   @include respond(Desktop-Big) {
-    height: 20rem;
+    height: 22.5rem;
     width: 25%;
     font-size: 5rem;
   }
@@ -449,9 +469,7 @@
 .Item-Internship-02 {
   background-image: url("./../Assets/internship02.png");
 }
-a {
-  font-size: 2rem;
-}
+
 .left-karna-hai {
   text-align: left;
 }

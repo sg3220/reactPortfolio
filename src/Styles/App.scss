@@ -12,14 +12,13 @@
   box-sizing: inherit;
 }
 .modeChanger {
+  height: 3.75vh;
+  width: 3.75vh;
+
+  position: absolute;
+
   @include respond(Desktop-Big) {
-    height: 3rem;
-    width: 3rem;
-
     border-radius: 3rem;
-
-    top: 1rem;
-    left: 1rem;
   }
   background-color: transparent;
   overflow: visible;
@@ -29,18 +28,29 @@
   position: relative;
 }
 .modeChangerImage {
+  height: 3.75vh;
+  width: 3.75vh;
+
+  position: absolute;
   background-color: transparent;
   @include respond(Desktop-Big) {
-    height: 3rem;
-    width: 3rem;
+    top: -150%;
+    left: 75%;
   }
+  @include respond(Desktop-Small) {
+    top: -150%;
+    left: 25%;
+  }
+  @include respond(Tablet) {
+    top: -1050%;
+    left: 25%;
+  }
+
   &:hover {
     @include respond(Desktop-Big) {
-      height: 3rem;
-      width: 3rem;
-      border-radius: 3rem;
+      border-radius: 50%;
     }
-    box-shadow: 0 0 1rem 1rem var(--color-modeChanger);
+    box-shadow: 0 0 1vh 1vh var(--color-modeChanger);
   }
 }
 /* width */

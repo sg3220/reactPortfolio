@@ -12,7 +12,7 @@ const Main = () => {
       <div className="Main--Section Main--Section-01 u-Row">
         <div className="text-Section-01 ">
           <div
-            className="primary-Heading"
+            className="secondary-Heading"
             style={{ marginLeft: 0, marginBottom: 0, fontWeight: 700 }}
           >
             Hello👋.

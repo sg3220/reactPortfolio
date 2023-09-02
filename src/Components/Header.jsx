@@ -1,12 +1,13 @@
 import "./../Styles/Header.scss";
-import React from "react";
+import "./../Styles/Theme.scss";
+import React, { useState } from "react";
 import HeaderName from "./HeaderName";
 import HeaderButton from "./HeaderButton";
 
 const Header = () => {
   return (
     <div className="Header">
-      <HeaderName data={"siddharth.ghosh();"} />
+      <HeaderName data={"Siddharth Ghosh"} />
       <HeaderButton
         data={"Home"}
         className={"header-Button header-Button-Red"}

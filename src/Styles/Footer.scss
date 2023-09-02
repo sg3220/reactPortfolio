@@ -3,7 +3,8 @@
 
 .Footer {
   @include respond(Desktop-Big) {
-    height: 5rem;
+    height: 4vh;
+    width: 100%;
     font-size: 1.5rem;
   }
 

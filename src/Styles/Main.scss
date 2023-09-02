@@ -4,40 +4,43 @@
 
 .Main {
   @include respond(Desktop-Big) {
-    height: 164rem;
+    height: auto;
   }
-  background-color: transparent;
+  background-color: red;
   box-sizing: border-box;
 
   &--Section {
     @include respond(Desktop-Big) {
-      width: 100%;
+      width: 100vw;
+      height: auto;
     }
-    @include respond(Tablet-Portrait) {
-      align-items: center;
+    @include respond(Tablet) {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
+
+      flex-wrap: wrap;
+
+      align-items: center;
       justify-content: center;
     }
   }
 
   &--Section-01 {
     @include respond(Desktop-Big) {
-      height: 56rem;
-      background-color: transparent;
+      height: 40vh;
+      background-color: orange;
     }
   }
   &--Section-02 {
     @include respond(Desktop-Big) {
-      height: 50rem;
-      background-color: transparent;
+      height: 40vh;
+      background-color: yellow;
     }
   }
   &--Section-03 {
     @include respond(Desktop-Big) {
-      height: 50rem;
-      background-color: transparent;
+      height: 40vh;
+      background-color: green;
     }
   }
 }

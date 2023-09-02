@@ -11,46 +11,56 @@ a {
     color: var(--color-link-active);
   }
 }
-.header-Name,
-.header-Button {
-  height: auto;
+.header-Name {
+  height: inherit;
   width: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
 
   background-color: var(--color-background-header-footer);
   color: var(--color-text-primary);
 
   font-family: "Source Code Pro", monospace;
+  font-size: 40%;
   font-weight: 700;
-  @include respond(Desktop-Big) {
-    font-size: 4rem;
-    padding: 0.5rem 1rem;
-  }
-  @include respond(Tablet-Landscape) {
-    font-size: 2.5rem;
-    padding: 0.25rem 0.5rem;
-  }
-  @include respond(Tablet-Portrait) {
-    font-size: 4rem;
-  }
-  @include respond(Smartphone) {
-    font-size: 2.5rem;
-  }
 
-  border-radius: 1rem;
-  letter-spacing: 0.2rem;
+  @include respond(Desktop-Small) {
+    font-size: 35%;
+  }
+  @include respond(Tablet) {
+    font-size: 50%;
+  }
 }
 
 .header-Button {
-  font-weight: 400;
-  @include respond(Desktop-Big) {
-    text-align: center;
-    font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.25vw;
+  padding: 0 0.5vw;
+
+  background-color: var(--color-background-header-footer);
+  color: var(--color-text-primary);
+
+  font-family: "Source Code Pro", monospace;
+  font-size: 30%;
+  font-weight: 500;
+
+  height: inherit;
+  width: auto;
+
+  @include respond(Desktop-Small) {
+    font-size: 25%;
   }
-  @include respond(Tablet-Landscape) {
-    font-size: 1.5rem;
-  }
-  @include respond(Tablet-Portrait) {
-    font-size: 2rem;
+  @include respond(Tablet) {
+    font-size: 40%;
   }
 
   &:hover {
@@ -59,26 +69,26 @@ a {
   }
 }
 .header-Button-Red {
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--color-red);
-    box-shadow: var(--color-red) 0px 0px 10px 2px;
   }
 }
 .header-Button-Yellow {
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--color-yellow);
-    box-shadow: var(--color-yellow) 0px 0px 10px 2px;
   }
 }
 .header-Button-Green {
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--color-green);
-    box-shadow: var(--color-green) 0px 0px 10px 2px;
   }
 }
 .header-Button-Blue {
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--color-blue);
-    box-shadow: var(--color-blue) 0px 0px 10px 2px;
   }
 }

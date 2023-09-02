@@ -42,7 +42,7 @@ const Education = () => {
             <br />
           </div>
         </div>
-        <div className="FakeDiv" style={{ height: "17.5rem" }}></div>
+        <div className="FakeDiv"></div>
         <div className="FakeDivUp" style={{ animationDelay: "2s" }}>
           2024
         </div>
@@ -52,8 +52,8 @@ const Education = () => {
             <br />
             <span className="highlight-Heading">CGPA: 9.45</span>
             <br />
-            SRM Institute Of Science & Technology
-            <br /> Ghaziabad, Uttar Pradesh, India
+            SRMIST
+            <br /> Ghaziabad, Uttar Pradesh
             <br />
           </div>
         </div>
@@ -99,6 +99,7 @@ const Education = () => {
           href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS70S2335047309016862"
           style={{ cursor: "pointer" }}
           target="_blank"
+          rel="noreferrer"
         >
           <div className="Item Item-NP"></div>
         </a>
@@ -106,42 +107,21 @@ const Education = () => {
           href="https://internalapp.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS16S4456035003109163"
           style={{ cursor: "pointer" }}
           target="_blank"
+          rel="noreferrer"
         >
           <div className="Item Item-ND"></div>
         </a>
-        <a
-          href="https://www.credly.com/badges/a4cfcb99-46eb-4480-9635-702e08b9dbc7"
-          style={{ cursor: "pointer" }}
-          target="_blank"
-        >
-          <div className="Item Item-ADA"></div>
-        </a>
-        <a
-          href="https://www.credly.com/badges/352f8939-5927-42a8-a024-2bd3da79b229"
-          style={{ cursor: "pointer" }}
-          target="_blank"
-        >
-          <div
-            className="Item Item-ACF"
-            data-url="AWS: Cloud Foundations"
-          ></div>
-        </a>
-        <a
-          href="https://www.coursera.org/account/accomplishments/verify/QEL4A3EE3DXV"
-          style={{ cursor: "pointer" }}
-          target="_blank"
-        >
-          <div className="Item Item-C"></div>
-        </a>
+
         <a
           href="https://www.udemy.com/certificate/UC-0e1de28a-4102-4e5a-93f9-f76dc5789321/"
           style={{ cursor: "pointer" }}
           target="_blank"
+          rel="noreferrer"
         >
           <div className="Item Item-U"></div>
         </a>
       </div>
-      <div
+      {/* <div
         className="wrapper u-Row"
         style={{
           width: "100%",
@@ -185,7 +165,7 @@ const Education = () => {
           animationDelay: "7.5s",
           height: "125rem",
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 };

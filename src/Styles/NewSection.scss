@@ -1,0 +1,150 @@
+@import "Mixins.scss";
+@import "Theme.scss";
+.componentBox {
+  height: 40vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  @include respond(Desktop-Medium) {
+    height: 50vh;
+  }
+  @include respond(Desktop-Small) {
+    height: 60vh;
+  }
+  @include respond(Tablet) {
+    height: auto;
+    width: 100%;
+
+    flex-direction: column;
+  }
+}
+.imageBox {
+  height: 40vh;
+  width: 50%;
+  @include respond(Desktop-Medium) {
+    height: 50vh;
+  }
+  @include respond(Desktop-Small) {
+    height: 60vh;
+  }
+  @include respond(Tablet) {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  &--actualImage {
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    box-shadow: 0 0 0.25rem 0.25rem white;
+    animation-name: infiniteUpDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+}
+.descriptionBox {
+  height: 40vh;
+  width: 50%;
+  @include respond(Desktop-Medium) {
+    height: 50vh;
+  }
+  @include respond(Desktop-Small) {
+    height: 60vh;
+  }
+  @include respond(Tablet) {
+    width: 100%;
+    height: 80vh;
+    margin: 5vh 2vw;
+  }
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+}
+.primaryHeading {
+  font-size: 8rem;
+  font-weight: 700;
+  @include respond(Desktop-Medium) {
+    font-size: 4rem;
+  }
+
+  @include respond(Desktop-Small) {
+    font-size: 3rem;
+  }
+}
+.secondaryHeading {
+  font-size: 6rem;
+  font-weight: 700;
+  @include respond(Desktop-Medium) {
+    font-size: 3rem;
+  }
+  @include respond(Desktop-Small) {
+    font-size: 2rem;
+  }
+  color: var(--color-text-secondary);
+}
+.tertiaryHeading {
+  font-size: 4rem;
+  font-weight: 300;
+  @include respond(Desktop-Medium) {
+    font-size: 2rem;
+  }
+  @include respond(Tablet) {
+    font-size: 1rem;
+  }
+  color: var(--color-text-tertiary);
+}
+.highlightHeading {
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+.alignItems-FS {
+  align-items: flex-start;
+}
+.alignItems-C {
+  align-items: center;
+}
+.actualImage01 {
+  height: 75%;
+  width: 75%;
+  background-image: url("./../Assets/image01.gif");
+  @include respond(Tablet) {
+    display: none;
+  }
+}
+
+.actualImage02 {
+  height: 40%;
+  width: 80%;
+  background-image: url("./../Assets/image02.gif");
+  @include respond(Tablet) {
+    display: none;
+  }
+}
+
+.actualImage03 {
+  height: 80%;
+  width: 80%;
+  background-image: url("./../Assets/image03.gif");
+  @include respond(Tablet) {
+    display: none;
+  }
+}

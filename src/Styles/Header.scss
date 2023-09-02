@@ -1,21 +1,22 @@
 @import "Theme";
 @import "Mixins";
 .Header {
-  background-color: var(--color-background-header-footer);
+  position: relative;
+  width: 100%;
 
-  align-items: center;
   display: flex;
   flex-direction: row;
+
+  align-items: center;
   justify-content: space-evenly;
-  @include respond(Desktop-Big) {
-    height: 10rem;
-  }
-  @include respond(Tablet-Portrait) {
+
+  background-color: var(--color-background-header-footer);
+
+  height: 7.5vh;
+  font-size: 7.5vh;
+
+  @include respond(Tablet) {
     flex-direction: column;
-    height: 37.5rem;
-  }
-  @include respond(Smartphone) {
-    flex-direction: column;
-    height: 30rem;
+    height: 40vh;
   }
 }

@@ -7,6 +7,7 @@ import Education from "./Components/Education";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import ContactForm from "./Components/ContactForm";
+import NewSection from "./Components/NewSection";
 import "./Styles/Utility.scss";
 import "./Styles/App.scss";
 import "./Styles/Theme.scss";
@@ -23,6 +24,7 @@ function App() {
   return (
     <Router>
       <div className={darkMode ? "dark-mode" : "light-mode"}>
+        <Header />
         <button className="modeChanger" onClick={toggleDarkMode}>
           <img
             className="modeChangerImage"
@@ -30,9 +32,8 @@ function App() {
             alt=""
           />
         </button>
-        <Header />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<NewSection />} />
           <Route path="/Education" element={<Education />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/ContactMe" element={<ContactMe />} />

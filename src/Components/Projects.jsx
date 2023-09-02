@@ -15,9 +15,7 @@ const Projects = () => {
               <div
                 className="Heading-Text u-Row"
                 style={{ textAlign: "center" }}
-              >
-                Projects
-              </div>
+              ></div>
               <div
                 className="Paragraph-Text"
                 style={{
@@ -39,22 +37,25 @@ const Projects = () => {
       </div>
       <div className="Projects-Internship--Section-02 u-Row">
         <div
-          className="primary-Heading"
+          className="pHeading"
           style={{ textAlign: "center", width: "100%" }}
         >
           Projects
         </div>
+
         <div className="projects-Container u-Row">
           <div className="project-Div">
-            <div className="primary-Heading project-Heading">
-              <a href="https://github.com/sg3220" target="_blank">
-                Chrome-Extension(Color-Picker)
+            <div className="sHeading">
+              <a
+                href="https://github.com/sg3220/ghoshColorPicker"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Color-Picker{" "}
               </a>
             </div>
-            <div className="tertiary-Heading project-Description">
-              I Developed A Chrome Extension For Color-Picking, Primarily Using
-              JS, And Minimal HTML, CSS. Integrated External APIs For Enhanced
-              Functionality.
+            <div className="tHeading project-Description">
+              A Chrome Extension Using External APIs For Enhanced Color-Picking.
             </div>
             <div
               className="icons-Array u-Row"
@@ -73,14 +74,18 @@ const Projects = () => {
           </div>
 
           <div className="project-Div">
-            <div className="primary-Heading project-Heading">
-              <a href="https://github.com/sg3220" target="_blank">
-                Chrome-Extension(Joke Generator)
+            <div className="sHeading ">
+              <a
+                href="https://github.com/sg3220/ghoshJokeGenerator"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Joke-Generator
               </a>
             </div>
-            <div className="tertiary-Heading project-Description">
-              I Created A Chrome Extension For Joke Generation, Using Mainly JS
-              And Some HTML, CSS. Utilized "DAD JOKE" External API.
+            <div className="tHeading project-Description">
+              A Chrome Extension For Joke Generation, Using "DAD JOKE" External
+              API.
             </div>
             <div
               className="icons-Array u-Row"
@@ -98,15 +103,45 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* <div className="project-Div">
-            <div className="primary-Heading project-Heading">
-              <a href="https://github.com/sg3220" target="_blank">
-                Full Stack To Do App
+          <div className="project-Div">
+            <div className="sHeading ">
+              <a
+                href="https://cache-verse.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CacheVerse
               </a>
             </div>
-            <div className="tertiary-Heading project-Description">
-              The To-Do app combines ExpressJS, NodeJS, and MongoDB for a robust
-              backend, while leveraging ReactJS for a dynamic frontend.
+            <div className="tHeading project-Description">
+              A Team-Portfolio To Showcase Purpose, Projects & Other Necessary
+              Details About My Team.
+            </div>
+            <div
+              className="icons-Array u-Row"
+              style={{ justifyContent: "start" }}
+            >
+              <div className="Icon Icon-HTML  iconSize"></div>
+              <div
+                className="Icon Icon-SASS  iconSize"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
+            </div>
+          </div>
+
+          <div className="project-Div">
+            <div className="sHeading ">
+              <a
+                href="https://github.com/sg3220/CalculatorInURLL"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Calculator-In-URL
+              </a>
+            </div>
+            <div className="tHeading project-Description">
+              A Simple Calculator, In Which Expressions Are Passed In URL
+              Itself.
             </div>
             <div
               className="icons-Array u-Row"
@@ -117,12 +152,49 @@ const Projects = () => {
                 className="Icon Icon-CSS  iconSize"
                 style={{ animationDelay: "0.5s" }}
               ></div>
+              <div className="Icon Icon-JavaScript  iconSize"></div>
+              <div
+                className="Icon Icon-Node  iconSize"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
+              <div className="Icon Icon-Express  iconSize"></div>
+            </div>
+          </div>
+
+          <div className="project-Div">
+            <div className="sHeading ">
+              <a
+                href="https://socket-sg3220.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Grocery-Store
+              </a>
+            </div>
+            <div className="tHeading">
+              A Grocery Store Using All Modern Day Technologies.
+            </div>
+            <div
+              className="icons-Array u-Row"
+              style={{ justifyContent: "start" }}
+            >
               <div
                 className="Icon Icon-JavaScript  iconSize"
-                style={{ animationDelay: "1s" }}
+                style={{ animationDelay: "0.5s" }}
               ></div>
+              <div className="Icon Icon-SASS  iconSize"></div>
+              <div
+                className="Icon Icon-MongoDB  iconSize"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
+              <div className="Icon Icon-Express  iconSize"></div>
+              <div
+                className="Icon Icon-React  iconSize"
+                style={{ animationDelay: "0.5s" }}
+              ></div>
+              <div className="Icon Icon-Node  iconSize"></div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
     .projects-Container {
       background-color: transparent;
       @include respond(Desktop-Big) {
-        height: 50rem;
+        height: auto;
         width: 100%;
       }
       @include respond(Tablet-Portrait) {
@@ -26,29 +26,21 @@
     }
     .project-Div {
       background-color: transparent;
+      border: 5px solid var(--color-text-secondary);
       &:hover {
         box-shadow: 0 0 10px 10px var(--color-text-tertiary);
       }
       @include respond(Desktop-Big) {
-        height: 25rem;
-        width: 40%;
+        height: auto;
+        width: 80%;
         border-radius: 1rem;
         padding-left: 1rem;
-      }
-      @include respond(Tablet-Landscape) {
-        height: 35%;
-      }
-      @include respond(Tablet-Portrait) {
-        height: 35%;
-        width: 60%;
-      }
-      @include respond(Smartphone) {
-        height: 35%;
-        width: 80%;
+        margin: 1rem;
       }
     }
     .project-Heading {
       text-align: "left";
+      margin-bottom: 5rem;
       @include respond(Desktop-Big) {
         height: 4rem;
         font-size: 4rem;
